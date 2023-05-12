@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Agente: --> (Evaluar\nSolicitud de Crédito)
+(Evaluar\nSolicitud de Crédito) <.. (Solicitar Información adicional al\ncliente) : <<extends>>
+note  "Si ingresos < 1000" as n1
+(Solicitar Información adicional al\ncliente) -- n1
+@enduml
