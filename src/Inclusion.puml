@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+actor :Bibliotecario: as Bibliotecario
+Bibliotecario -- (Baja socio)
+(Baja socio) .> (Buscar socio) : <<include>>
+
+@enduml
