@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Cliente Bancario: <|-- :Cliente Corporativo:
+:Cliente Bancario: <|-- :Cliente Normal:
+
+note left of :Cliente Normal:
+Actor descendiente
+end note
+
+note "Actor antecesor" as N2
+
+:Cliente Bancario: -- N2
+@enduml
